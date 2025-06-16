@@ -13,3 +13,7 @@ age = 16.0
 used_python = True
 
 ##Step 5
+hobbies = ["Playing games", "Playing on the PSP", "Reading manga", "Watching shows"]
+
+##Step 6
+favorite_things = {"movie": "Fury"}
