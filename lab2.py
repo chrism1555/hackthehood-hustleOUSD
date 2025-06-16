@@ -13,4 +13,3 @@ age = 16.0
 used_python = True
 
 ##Step 5
-hobbies = ("Games", "producing music", "using my PSP")
