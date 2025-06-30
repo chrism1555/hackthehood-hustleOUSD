@@ -9,14 +9,14 @@ menu = {'Pizza': 2.99,
         'Soda': 0.89}
 # Menu holds the value of each item on the dictionary
 
-# total_price("Pizza","Hotdog")
+
 def total_price(item1, item2):
 
    total = menu[item1] + menu[item2]
 
    return total
 
-#print(total_price("Burger","Hotdog"))
+print(total_price("Burger","Hotdog"))
 # Prints the sum of both items
 
 
@@ -26,7 +26,7 @@ def price_difference(Pizza, Soda):
 
    return difference
 
-#print(price_difference("Pizza","Soda"))
+print(price_difference("Pizza","Soda"))
 # Prints the value difference of both items
 
 
@@ -42,8 +42,8 @@ def deflation(item, divide):
 
    return menu
 
-#print(deflation("Pizza", 2))
-#print(inflation("Burger", 2))
+print(deflation("Pizza", 2))
+print(inflation("Burger", 2))
 
 menu = {'Pizza': 2.99, 
         'Burger': 3.99, 
