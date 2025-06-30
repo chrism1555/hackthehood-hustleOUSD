@@ -19,6 +19,11 @@ for x in list1:
     elif x < 0:
          print("Value is negative")
     else:
-         print("NUmber is zero")
+         print("Number is zero")
 
-inventory = ["int", "glass"]
+inventory = ["egg", "gold", "axe", "sword", "flint", "coal", "water bucket"]
+for i in inventory:
+    if i == "flint":
+        print("ore")
+    elif i == "axe":
+        print("equipment")
