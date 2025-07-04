@@ -2,7 +2,7 @@ checking = "yes"
 
 while checking == "yes":
     print("What is your age: ")
-    user_input = input ()
+    user_input = input()
     if int(user_input) >= 18:
         print("Yes you can vote")
     else:
