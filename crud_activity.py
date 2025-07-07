@@ -1,7 +1,7 @@
 cookbook_list = []
 
 def create(recipe):
-
+   
    return print("A new recipe has been added to the list!")
 
 def read(index):
@@ -18,9 +18,8 @@ def destroy():
 
 def list_all_recipes():
       
-   for i in cookbook_list:
-      if i == "recipe":
-         print("ingredient")
+
+      
 
 
 def main():
