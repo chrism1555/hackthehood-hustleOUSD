@@ -2,22 +2,16 @@ cookbook_list = []
 
 def create(recipe):
 
-      print("A recipe has been added to the list")
-
-      return
+      return print("A new recipe has been added to the list!")
 
 def read(index):
       
       return index()
 
 def update(index, recipe):
-      
-      print("The recipe has been updated")
 
-      return
+      return print("The recipe has been updated!")
 
 def destroy():
       
-      print("Statement that shows waht recipe has been removed")\
-      
-      return
+      return print("A recipe has been removed!")
