@@ -20,9 +20,9 @@ print(total_price("Burger","Hotdog"))
 # Prints the sum of both items
 
 
-def price_difference(Pizza, Soda):
+def price_difference(item1, item2):
 
-   difference = menu[Pizza] - menu[Soda]
+   difference = menu[item1] - menu[item2]
 
    return difference
 
