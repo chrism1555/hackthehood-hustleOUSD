@@ -1,28 +1,35 @@
-cookbook_list = []
+cookbook = []
 
 def create(recipe):
-   
-   return 
-#print("A new recipe has been added to the list!")
+    cookbook.append(recipe)
+
+    print("A new recipe has been added to the list!")
 
 def read(index):
-
-   return 
+    if index in range(len(cookbook)):
+        return cookbook[index]
+    else:
+        print("Non-existent")
 
 def update(index, recipe):
-
-   return 
-#print("The recipe has been updated!")
+    if index in range(len(cookbook)):
+        cookbook[index] = recipe
+        print(f"Updated value: {cookbook[index]}")
+    else:
+        print("What would you like to update it with?")
 
 def destroy(index):
-      
-   return 
-#print("A recipe has been removed!")
+    x = f"This recipe was removed: {cookbook[index]}"
+    if index in range(len(cookbook)):
+        print(x)
+        cookbook.pop(index)
+    else:
+        print("Try a different index")
 
 def list_all_recipes():
-      
+    for i in cookbook:
+        print(i)
 
-      
 
 
 def main():
@@ -62,6 +69,5 @@ def main():
             break
         else:
             print("Invalid choice, please try again.")
-
 
 main()
