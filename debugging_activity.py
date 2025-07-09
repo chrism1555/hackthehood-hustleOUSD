@@ -45,13 +45,29 @@ sum = 0
 for number in numbers:
     sum += number  # Missing Indent
 
-print("Sum of number:", sum)
+print("Sum of numbers:", sum)
 
 # Snippet 8
 def factorial(n):
     if n == 0:
-        return n
+        return 0
     else:
         return n * factorial(n-1)
     
 print(factorial(5))
+
+# Snippet 9
+name = input("Enter your name: ")
+if name == ("Alice" or "Bob"):
+    print("Hello, " + name)
+else:
+    print("Hello, stranger!")
+
+# Snippet 10
+def divide_numbers(x, y):
+   result = x + y   # Division by zero
+   return result
+ 
+num1 = 10
+num2 = 0
+print(divide_numbers(num1, num2))
