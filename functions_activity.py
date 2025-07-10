@@ -36,15 +36,40 @@ def inflation(item, increase):
 
    return menu
 
+
 def deflation(item, divide):
    
    menu[item] = menu[item] / divide  
 
    return menu
 
+
 print(deflation("Pizza", 2))
 print(inflation("Burger", 2))
 
+
+def change_of_menu(menu, order):
+    
+    menu_items = {}
+    for item in order:
+        if item in menu:
+            menu_items[item] = menu[item]
+
+    return menu_items
+
+menu = {'Pizza': 2.99, 
+        'Burger': 3.99, 
+        'Hotdog': 1.99, 
+        'Cheese': 0.59, 
+        'Ice cream': 1.49,
+        'Churro': 0.79, 
+        'Soda': 0.89}
+
+items_chosen = ["Soda", "Cheese"]
+
+new_menu = change_of_menu(menu, items_chosen)
+
+print(new_menu)
 
 
 menu = {'Pizza': 2.99, 
@@ -54,6 +79,7 @@ menu = {'Pizza': 2.99,
         'Ice cream': 1.49,
         'Churro': 0.79, 
         'Soda': 0.89}
+
 menu["Popcorn"] = "4.99" # type: ignore
 
 print(menu)
