@@ -50,15 +50,15 @@ print("Sum of numbers:", sum)
 # Snippet 8
 def factorial(n):
     if n == 0:
-        return 0
+        return 1
     else:
-        return n * factorial(n-1)
+        return n * factorial(n-1) # - to +
     
 print(factorial(5))
 
 # Snippet 9
 name = input("Enter your name: ")
-if name == ("Alice" or "Bob"):
+if name == "Alice" or name == "Bob":  #Missing variable
     print("Hello, " + name)
 else:
     print("Hello, stranger!")
