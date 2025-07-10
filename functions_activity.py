@@ -24,7 +24,7 @@ def price_difference(item1, item2):
 
    difference = menu[item1] - menu[item2]
 
-   return difference
+   return abs(difference)
 
 print(price_difference("Pizza","Soda"))
 # Prints the value difference of both items
@@ -44,6 +44,8 @@ def deflation(item, divide):
 
 print(deflation("Pizza", 2))
 print(inflation("Burger", 2))
+
+
 
 menu = {'Pizza': 2.99, 
         'Burger': 3.99, 
