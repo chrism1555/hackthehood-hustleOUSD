@@ -7,7 +7,7 @@ class Ability:
 
     def attack(self):
         '''Return a random value between 0 and max_damage'''
-        random.randint(0, self.max_damage)
+        return random.randint(0, self.max_damage)
 
 
 if __name__ == "__main__":
