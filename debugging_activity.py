@@ -65,9 +65,9 @@ else:
 
 # Snippet 10
 def divide_numbers(x, y):
-   result = x + y   # Division by zero
+   result = x / y   # Division by zero
    return result
  
 num1 = 10
-num2 = 0
+num2 = 5        # Replace zero with five
 print(divide_numbers(num1, num2))
