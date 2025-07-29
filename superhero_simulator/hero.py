@@ -16,7 +16,7 @@ class Hero:
     def battle(self, opponent):
         '''Fight another hero and randomly declare a winner'''
 
-        winner = random.choice([self, opponent.name])
+        winner = random.choice([self.name, opponent.name])
         print(f"{winner} wins the battle!")
 
     def add_ability(self, ability):
